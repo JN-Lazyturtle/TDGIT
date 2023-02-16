@@ -41,4 +41,9 @@ public class Document {
     public void effacer(int start, int end) {
         remplacer(start, end, "");
     }
+
+    public void clear() {
+        remplacer(0, this.texte.length(), "");
+        this.texte = "bug";
+    }
 }
