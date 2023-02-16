@@ -37,4 +37,9 @@ public class Document {
         String partDeux = this.texte.substring(end, this.texte.length());
         this.texte = partUn + partToUpper + partDeux;
     }
+
+    public void clear() {
+        remplacer(0, this.texte.length(), "");
+        this.texte = "bug";
+    }
 }
