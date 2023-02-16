@@ -37,4 +37,8 @@ public class Document {
         String partDeux = this.texte.substring(end, this.texte.length());
         this.texte = partUn + partToUpper + partDeux;
     }
+
+    public void effacer(int start, int end) {
+        remplacer(start, end, "");
+    }
 }
